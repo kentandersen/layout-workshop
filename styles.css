@@ -1,0 +1,50 @@
+.cols h1 + .col,
+.cols h1 + .col + .col,
+.cols h1 + .col + .col + .col {
+  margin-top: -1em;
+}
+
+.specificity {
+  margin: 5rem auto;
+}
+
+.specificity tbody {
+  background: #fff;
+  color: #000;
+}
+
+.specificity td {
+  height: 120px;
+  width: 60px;
+  padding: 20px;
+  border: 4px solid #ccc;
+  color: 000;
+  font-size: 2em;
+  text-align: center;
+  background:  linear-gradient(to bottom, rgba(0,0,0,0.16) 0%,#FDF6E3 49%,rgba(0,0,0,0.12) 100%);
+}
+
+ul#summer-drinks li {
+  color: #c6c8ca;
+}
+
+.favorite {
+  color: red;
+  font-weight: bold;
+}
+.box-sizing-example {
+  margin:1em auto;
+  color: #1A1A1A;
+}
+
+.box-sizing-padding {
+  background-color: #FFF9AE;
+  border: 0 solid #BBB0A3;
+}
+
+.box-sizing-content {
+  border:1px solid;
+}
+.border-box {
+  box-sizing: border-box;
+}
