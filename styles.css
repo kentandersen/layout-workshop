@@ -32,9 +32,18 @@ ul#summer-drinks li {
   color: red;
   font-weight: bold;
 }
+.border-box, .border-box * {
+  box-sizing: border-box;
+}
+
 .box-sizing-example {
   margin:1em auto;
   color: #1A1A1A;
+}
+
+.box-sizing-margin {
+  border:2px dashed #fff;
+  padding: 40px;
 }
 
 .box-sizing-padding {
@@ -45,6 +54,33 @@ ul#summer-drinks li {
 .box-sizing-content {
   border:1px solid;
 }
-.border-box {
-  box-sizing: border-box;
+
+.floating-example {
+  margin-top: 1em;
 }
+
+.floating-example {
+  color: #fff;
+}
+.floating-example.clearfix:after {
+  content: "";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.floating-example > * {
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.floating-example article,
+.floating-example aside {
+  background: #FD5158;
+}
+
+.floating-example footer {
+  background: #36BDB2;
+}
+

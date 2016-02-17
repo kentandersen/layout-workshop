@@ -656,6 +656,11 @@ class: cols two
     height: 170px;
   }
 ```
+##Bredde
+**250**
+
+##Høyde
+**170**
 ]
 
 <div class="col">
@@ -681,8 +686,10 @@ class: cols two
     padding:40px;
   }
 ```
-##Ny bredde
-250 + 40 + 40 = **290**
+##Bredde
+250 + 40 + 40 = **330**
+##Høyde
+170 + 40 + 40 = **250**
 ]
 
 <div class="col">
@@ -714,8 +721,10 @@ class: cols two
     border: 10px;
   }
 ```
-##Ny bredde
-290 + 10 + 10 = **310**
+##Bredde
+250 + 40 + 40 + 10 + 10 = **350**
+##Høyde
+170 + 40 + 40 + 10 + 10 = **270**
 ]
 
 <div class="col">
@@ -745,18 +754,18 @@ class: cols two
     height: 170px;
     padding:40px;
     border: 10px;
-    margin: 10px;
+    margin: 40px;
   }
 ```
-##box + margin
-310 + 10 + 10 = **330**
+##Bredde
+250 + 40 + 40 + 10 + 10 = **350**
+##Høyde
+170 + 40 + 40 + 10 + 10 = **270**
 ]
 
 <div class="col">
   <div class="box-sizing-example box-sizing-margin" style="
     width:350px;
-    border:2px dashed #fff;
-    padding: 40px;
   ">
 
     <div class="box-sizing-padding" style="
@@ -788,18 +797,18 @@ class: cols two
     height: auto;
     padding:40px;
     border: 10px;
-    margin: 10px;
+    margin: 40px;
   }
 ```
-##box + margin
-310 + 10 + 10 = **330**
+##Bredde
+250 + 40 + 40 + 10 + 10 = **350**
+##Høyde
+180 + 40 + 40 + 10 + 10 = **280**
 ]
 
 <div class="col">
   <div class="box-sizing-example box-sizing-margin" style="
     width:350px;
-    border:2px dashed #fff;
-    padding: 40px;
   ">
 
     <div class="box-sizing-padding" style="
@@ -816,6 +825,9 @@ class: cols two
   </div>
 </div>
 
+???
+Linjehøyden er 30px, 6*30 = 180
+
 ---
 class: cols two
 
@@ -827,18 +839,18 @@ class: cols two
     width: 250px;
     padding:40px;
     border: 10px;
-    margin: 10px;
+    margin: 40px;
   }
 ```
-##box + margin
-310 + 10 + 10 = **330**
+##Bredde
+250 + 40 + 40 + 10 + 10 = **350**
+##Høyde
+180 + 40 + 40 + 10 + 10 = **280**
 ]
 
 <div class="col">
   <div class="box-sizing-example box-sizing-margin" style="
     width:350px;
-    border:2px dashed #fff;
-    padding: 40px;
   ">
 
     <div class="box-sizing-padding" style="
@@ -873,16 +885,23 @@ class: cols two
     width: 250px;
   }
 ```
+##Bredde
+**250**
+##Høyde
+**180**
 ]
 
 <div class="col">
-  <div class="box-sizing-example box-sizing-content" style="
+  <div class="box-sizing-example box-sizing-content border-box" style="
     width:250px;
     color: #fff;
   ">
     Det ble stille og neandertaleren viste hvordan den langhårete krepsen fungerte. En sebra degraderte astronauten uansvarlig.
   </div>
 </div>
+
+???
+Har har vi ikke satt none høyde
 
 ---
 class: cols two
@@ -897,13 +916,14 @@ class: cols two
     padding:40px;
   }
 ```
-##Ny bredde
+##Bredde
 **250**
+##Høyde
+**350**
 ]
 
 <div class="col">
-  <div class="box-sizing-example box-sizing-padding" style="
-    box-sizing: border-box;
+  <div class="box-sizing-example box-sizing-padding border-box" style="
     padding:40px;
     width:250px;
   ">
@@ -928,13 +948,14 @@ class: cols two
     border: 10px;
   }
 ```
-##Ny bredde
+##Bredde
 **250**
+##Høyde
+**460**
 ]
 
 <div class="col">
-  <div class="box-sizing-example box-sizing-padding" style="
-    box-sizing: border-box;
+  <div class="box-sizing-example box-sizing-padding border-box" style="
     width:250px;
     padding:40px;
     border-width: 10px;
@@ -957,22 +978,21 @@ class: cols two
     width: 250px;
     padding:40px;
     border: 10px;
-    margin: 10px;
+    margin: 40px;
   }
 ```
-##Ny bredde
+##Bredde
 **250**
+##Høyde
+**460**
 ]
 
 <div class="col">
   <div class="box-sizing-example box-sizing-margin" style="
     width:250px;
-    border:2px dashed #fff;
-    padding: 40px;
   ">
 
-    <div class="box-sizing-padding" style="
-      box-sizing: border-box;
+    <div class="box-sizing-padding border-box" style="
       width:250px;
       padding:40px;
       border-width: 10px;
@@ -992,8 +1012,6 @@ class: cols two
 <div class="col">
   <div class="box-sizing-example box-sizing-margin" style="
     width:350px;
-    border:2px dashed #fff;
-    padding: 40px;
   ">
 
     <div class="box-sizing-padding" style="
@@ -1012,12 +1030,9 @@ class: cols two
 <div class="col">
   <div class="box-sizing-example box-sizing-margin" style="
     width:250px;
-    border:2px dashed #fff;
-    padding: 40px;
   ">
 
-    <div class="box-sizing-padding" style="
-      box-sizing: border-box;
+    <div class="box-sizing-padding border-box border-box" style="
       width:250px;
       padding:40px;
       border-width: 10px;
@@ -1033,7 +1048,15 @@ class: cols two
 Her ser vi de to ved siden av hverandre
 
 ---
+# CSS Box model
 
+```css
+  * {
+    box-sizing: border-box;
+  }
+```
+
+---
 
 class: center middle bekk-top
 
@@ -1046,6 +1069,247 @@ class: center middle bekk-top
 " />
 
 
+---
+class: cols two
+
+#Floating
+
+.col[
+```css
+  img {}
+```
+]
+
+.col[
+  <img src="resources/css-box-model-cat.jpg" style="width:50%"/>
+  ##Pusekatt brakk
+
+  En gitarist spillte veldig elegant. Sjeiken dro en purk til han snakket høflig gjennom den lysegrønne busken. Da imponerte pusekatten ei lærerinne uansvarlig. Det ble stille og elgen viste hvordan den svære sauen fungerte. Sløve sebraer fyllte luften, og sabeltanntigeren løp over en skiftenøkkel.
+]
+
+---
+class: cols two
+
+#Floating
+
+.col[
+```css
+  img {
+    float: left;
+  }
+```
+]
+
+.col[
+  <img src="resources/css-box-model-cat.jpg" style="width:50%;float:left;"/>
+  ##Pusekatt brakk
+
+  En gitarist spillte veldig elegant. Sjeiken dro en purk til han snakket høflig gjennom den lysegrønne busken. Da imponerte pusekatten ei lærerinne uansvarlig. Det ble stille og elgen viste hvordan den svære sauen fungerte. Sløve sebraer fyllte luften, og sabeltanntigeren løp over en skiftenøkkel.
+]
+
+---
+class: cols two
+
+#Floating
+
+.col[
+```css
+  img {
+    float: right;
+  }
+```
+]
+
+.col[
+  <img src="resources/css-box-model-cat.jpg" style="width:50%;float:right;"/>
+  ##Pusekatt brakk
+
+  En gitarist spillte veldig elegant. Sjeiken dro en purk til han snakket høflig gjennom den lysegrønne busken. Da imponerte pusekatten ei lærerinne uansvarlig. Det ble stille og elgen viste hvordan den svære sauen fungerte. Sløve sebraer fyllte luften, og sabeltanntigeren løp over en skiftenøkkel.
+]
+
+---
+class: cols two
+
+#Floating layout
+
+.col[
+```css
+  article, aside, footer {
+    margin-bottom: 10px;
+  }
+```
+]
+<div class="col">
+  <div class="floating-example">
+    <article>&lt article/ &gt;</article>
+    <aside>&lt aside/ &gt;</aside>
+    <footer>&lt footer/ &gt;</footer>
+  </div>
+</div>
+
+---
+class: cols two
+
+#Floating layout
+
+.col[
+```css
+  article, aside, footer {
+    margin-bottom: 10px;
+  }
+
+  article {
+    width: 59%;
+    float: left;
+  }
+
+  aside {
+    width: 39%;
+    float: right;
+  }
+```
+]
+<div class="col">
+  <div class="floating-example border-box">
+    <article style="width: 58%;float: left">
+      <h2>Pusekatt brakk</h2>
+
+      <p>En gitarist spillte veldig elegant. Sjeiken dro en purk til han snakket høflig gjennom den lysegrønne busken. Da imponerte pusekatten ei lærerinne uansvarlig.</p>
+    </article>
+    <aside style="width: 38%;float: right;">&lt aside/ &gt;</aside>
+    <footer>&lt footer/ &gt;</footer>
+  </div>
+</div>
+
+---
+class: cols two
+
+#Floating layout - clearfix
+
+.col[
+```css
+  article, aside, footer {
+    margin-bottom: 10px;
+  }
+
+  article {
+    width: 58%;
+    float: left;
+  }
+
+  aside {
+    width: 38%;
+    float: right;
+  }
+
+  footer {
+    clear: both;
+  }
+```
+]
+<div class="col">
+  <div class="floating-example border-box">
+    <article style="width: 58%;float: left">
+      <h2>Pusekatt brakk</h2>
+
+      <p>En gitarist spillte veldig elegant. Sjeiken dro en purk til han snakket høflig gjennom den lysegrønne busken. Da imponerte pusekatten ei lærerinne uansvarlig.</p>
+    </article>
+    <aside style="width: 38%;float: right;">&lt aside/ &gt;</aside>
+    <footer style="clear:both;">&lt footer/ &gt;</footer>
+  </div>
+</div>
+
+---
+class: cols three
+
+#Collapse
+
+
+.col[
+```css
+  .container {
+    paddnig: 10px;
+  }
+
+  article {
+    margin-right: 10px;
+  }
+```
+]
+<div class="col" style="width:66%">
+  <div class="floating-example" style="padding: 10px; border: 1px solid #515151;">
+     <article style="margin-right: 10px;">&lt article/ &gt;</article>
+     <article style="margin-right: 10px;">&lt article/ &gt;</article>
+     <article style="margin: 0 10px 0 0;">&lt article/ &gt;</article>
+  </div>
+</div>
+
+---
+class: cols three
+
+#Collapse
+
+
+.col[
+```css
+  .container {
+    paddnig: 10px;
+  }
+
+  article {
+    margin-right: 10px;
+    float: left;
+  }
+```
+]
+<div class="col" style="width:66%">
+  <div class="floating-example" style="padding: 10px; border: 1px solid #515151;">
+    <article style="margin: 0 10px 0 0; float:left">&lt article/ &gt;</article>
+    <article style="margin: 0 10px 0 0; float:left">&lt article/ &gt;</article>
+    <article style="margin: 0 10px 0 0; float:left">&lt article/ &gt;</article>
+  </div>
+</div>
+
+---
+
+class: cols three
+
+#Collapse - clearfix
+
+
+.col[
+```css
+  .container {
+    paddnig: 10px;
+  }
+
+  .container:after {
+    content: "";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+  }
+
+  article {
+    margin-right: 10px;
+    float: left;
+  }
+```
+]
+<div class="col" style="width:66%">
+  <div class="floating-example clearfix" style="padding: 10px; border: 1px solid #515151;">
+     <article style="margin: 0 10px 0 0; float:left">&lt article/ &gt;</article>
+     <article style="margin: 0 10px 0 0; float:left">&lt article/ &gt;</article>
+     <article style="margin: 0 10px 0 0; float:left">&lt article/ &gt;</article>
+  </div>
+</div>
+
+---
+class: split
+#Oppgave
+
+* Implementer designet _kun_ med float og clears
 
     </textarea>
     <script src="node_modules/remark-bekk/vendor/remark.min.js" type="text/javascript"></script>
