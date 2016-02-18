@@ -1311,6 +1311,209 @@ class: split
 
 * Implementer designet _kun_ med float og clears
 
+---
+class: center middle
+
+#Position
+
+---
+class: cols two
+
+#Static
+
+.col[
+```css
+  .box-a, .box-b, .box-c  {
+    position: static; /* Default */
+    width: 100px;
+    height: 100px;
+   }
+```
+]
+<div class="col">
+  <div class="position-example">
+      <div class="box-a">A</div>
+      <div class="box-b">B</div>
+      <div class="box-c">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+
+#Static
+
+.col[
+```css
+  .box-a, .box-b, .box-c  {
+    position: static; /* Default */
+    width: 100px;
+    height: 100px;
+   }
+  .box-b {
+    position: relative;
+    left: 80px;
+    top: 20px;
+  }
+```
+]
+<div class="col">
+  <div class="position-example">
+      <div class="box-a">A</div>
+      <div class="box-b" style="position:relative;left: 80px;top: 20px;">B</div>
+      <div class="box-c">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+
+#Absolute
+
+.col[
+```css
+  .box-a, .box-b, .box-c  {
+    position: static; /* Default */
+    width: 100px;
+    height: 100px;
+   }
+  .box-b {
+    position: absolute;
+  }
+```
+]
+<div class="col">
+  <div class="position-example">
+      <div class="box-a">A</div>
+      <div class="box-b" style="position:absolute;">B</div>
+      <div class="box-c">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+
+#Absolute
+
+.col[
+```css
+  .box-a, .box-b, .box-c  {
+    position: static; /* Default */
+    width: 100px;
+    height: 100px;
+   }
+  .box-b {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+```
+]
+<div class="col">
+  <div class="position-example">
+      <div class="box-a">A</div>
+      <div class="box-b" style="position:absolute;right: 0;top: 0;">B</div>
+      <div class="box-c">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+
+#Absolute
+
+.col[
+```css
+  .container {
+    position: relative;
+  }
+  .box-a, .box-b, .box-c  {
+    position: static; /* Default */
+    width: 100px;
+    height: 100px;
+   }
+  .box-b {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+```
+]
+<div class="col">
+  <div class="position-example" style="position: relative;">
+      <div class="box-a">A</div>
+      <div class="box-b" style="position:absolute;right: 0;top: 0;">B</div>
+      <div class="box-c">C</div>
+  </div>
+</div>
+---
+class: cols two
+
+#Fixed
+
+.col[
+```css
+  .container {
+    height: 550px;
+    overflow: auto;
+  }
+
+  header {
+    position: fixed;
+    z-index: 2;
+  }
+```
+]
+<div class="col">
+  <div class="position-example" style="height: 500px; overflow: auto;">
+    <heading class="box-a" style="width: auto;position:fixed;z-index:2;">Heading</heading>
+    <h2>Juledvergen luktet en sykkel</h2>
+    <p>Det var en gang noen kaniner som klemte andre indianerer. En astronaut tok med seg femten båter inn til mafiabossen. Den fryktete gitaren traff båtene med ei ugle som jobbet bak en rask lydmodul. </p>
+    <h2>Politiker mistet</h2>
+    <p>En figur bar orken treffsikkert. Presten var rettferdig og hurtig. Plutselig så de sytten politikerer som kom ved ringpermen. Sabeltannhundene klappet mange rytterer. </p>
+    <h2>Gorilla løftet</h2>
+    <p>35 ørner bukket en kjent biff på fjorten dager. En kjempefjott spiste flygemaskinen til tyranosaurusene. De så en kamerat som hoppet hensynsløst på en slipemaskin. Da importerte neandertaleren en kreps elegant. 76 kroner måtte en sabeltanngiraff betale. </p>
+    <h2>Robot traff</h2>
+    <p>Flere sjefer tegnet da en ork som lurte en elefant bar en politiker litt bak kretsen. De små pyromanene brølte i skjul. Knappene ankom, mens vennene jobbet over stokken. Plutselig så de to neandertalerer som kom foran osten. Flere sabeltannkatter brølte da en dverg som flamberte en doktor malte en sebra over fiskebåten. En rytter kjøpte seg en varm brannbil. </p>
+    <h2>Rev kjørte på en kabel</h2>
+    <p>En kanin malte noen ingeniører hensynsløst. Fire svart matte neandertalerer møtte 44 hodeløse dvergpuddeler. En venn var fantastisk og dro en mørk neandertaler. Orken var lysegrønn og sleip. Da løftet bergenseren skuespilleren fort. Femten kroner måtte en ungdom betale. Noen bueskyttere lurte en bil. Sjefen tok så en svart stokk og kastet den på en annen alv. De små asiaterene komuniserte i skjul. Den likbleke propellen traff serverene med geita som fisket langt foran en lemlestet monitor. </p>
+  </div>
+</div>
+
+--
+
+<div style="
+  z-index:2;
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,.45);
+">
+
+<div style="
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-top: -154px;
+  margin-left: -148px;
+  background:#fff;
+  padding:20px 40px;
+">
+  <img src="resources/css-awesome.png" style="height: 300px" />
+</div>
+</div>
+
+
+---
+class: split
+#Oppgave
+
+* Implementer designet _kun_ med positon
+
+
+
     </textarea>
     <script src="node_modules/remark-bekk/vendor/remark.min.js" type="text/javascript"></script>
     <script type="text/javascript">

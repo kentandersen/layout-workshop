@@ -84,3 +84,32 @@ ul#summer-drinks li {
   background: #36BDB2;
 }
 
+
+.position-example {
+  padding: 10px;
+  border: 1px solid #515151;
+}
+.position-example .box-a,
+.position-example .box-b,
+.position-example .box-c {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 3em;
+  color: #fff;
+}
+
+.position-example .box-a {
+  background:#FD5158;
+}
+
+.position-example .box-b {
+  background:#FFF9AE;
+  color: #1A1A1A;
+}
+
+.position-example .box-c {
+  background:#36BDB2;
+}
+
