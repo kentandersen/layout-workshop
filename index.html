@@ -1586,8 +1586,12 @@ class: center middle
 class: split
 #Oppgave
 
-* Implementer designet _kun_ med inline-elementer
+Implementer designet _kun_ med inline-elementer
 
+##Nyttige ressurser
+* [CSS-triks, Display - inline](https://css-tricks.com/almanac/properties/d/display/#inline)
+* [CSS-triks, Fighting the Space Between Inline Block Elements](https://css-tricks.com/fighting-the-space-between-inline-block-elements/)
+* [Learn CSS Layout, inline-block](http://learnlayout.com/inline-block.html)
 ---
 
 class: center middle
@@ -1835,6 +1839,10 @@ class: split
 
 * Implementer designet _kun_ med float og clears
 
+##Nyttige ressurser
+* [CSS-triks, All About Floats](https://css-tricks.com/all-about-floats/)
+* [Learn CSS Layout, float](http://learnlayout.com/float.html)
+
 ---
 class: center middle
 
@@ -1966,9 +1974,7 @@ class: cols two
   .container {
     position: relative;
   }
-  .box-a, .box-b, .box-c  {
-    position: static; /* Default */
-  }
+
   .box-b {
     position: absolute;
     width: 100px;
@@ -1982,6 +1988,78 @@ class: cols two
       <div class="box-a">A</div>
       <div class="box-b" style="position:absolute;width:100px;right: 0;top: 0;">B</div>
       <div class="box-c">C</div>
+  </div>
+</div>
+---
+class: cols two
+
+#Absolute
+
+.col[
+```css
+  .container {
+    position: relative;
+  }
+
+  .box-b, .box-c {
+    position: absolute;
+    width: 100px;
+    right: 0;
+    top: 0;
+  }
+
+  .box-b, .box-c {
+    right: 60px;
+  }
+```
+]
+<div class="col">
+  <div class="position-example" style="position: relative;">
+      <div class="box-a">A</div>
+      <div class="box-b" style="position:absolute;width:100px;right: 0;top: 0;">B</div>
+      <div class="box-c" style="position:absolute;width:100px;right: 60px;top: 0;">C</div>
+  </div>
+</div>
+
+???
+c ligger over b fordi den ligger sist i domen
+
+---
+class: cols two
+
+#Absolute
+
+.col[
+```css
+  .container {
+    position: relative;
+  }
+
+  .box-b, .box-c {
+    position: absolute;
+    width: 100px;
+    right: 0;
+    top: 0;
+  }
+
+  .box-b, .box-c {
+    right: 60px;
+  }
+
+  .box-b {
+    z-index: 1;
+  }
+
+  .box-c {
+    z-index: 2;
+  }
+```
+]
+<div class="col">
+  <div class="position-example" style="position: relative;">
+      <div class="box-a">A</div>
+      <div class="box-b" style="position:absolute;width:100px;right: 0;top: 0;z-index: 2;">B</div>
+      <div class="box-c" style="position:absolute;width:100px;right: 60px;top: 0;z-index: 1;">C</div>
   </div>
 </div>
 ---
@@ -2048,7 +2126,13 @@ class: cols two
 class: split
 #Oppgave
 
-* Implementer designet _kun_ med positon
+Implementer designet _kun_ med positon
+
+##Nyttige ressurser
+* [CSS-triks, Position](https://css-tricks.com/almanac/properties/p/position/)
+* [CSS-triks, Absolute Positioning Inside Relative Positioning](https://css-tricks.com/absolute-positioning-inside-relative-positioning/)
+* [Learn CSS Layout, position](http://learnlayout.com/position.html)
+
 
 ---
 class: middle center
