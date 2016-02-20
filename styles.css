@@ -32,6 +32,63 @@ ul#summer-drinks li {
   color: red;
   font-weight: bold;
 }
+
+.inline-example {
+  margin-top: 50px;
+}
+
+
+.inline-example div {
+  display: inline-block;
+  padding: 10px;
+  background-color: #FD5158;
+  color: #fff;
+  height: 100px;
+  width: 100px;
+}
+
+.inline-example article,
+.inline-example aside,
+.inline-example footer {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.inline-example article {
+  background-color: #FD5158;
+}
+
+.inline-example aside {
+  background-color: #FFF9AE;
+  color: #1A1A1A;
+}
+.inline-example footer {
+  background: #36BDB2;
+}
+
+.inline-example-icon {
+
+  font-size: 2em;
+}
+
+.inline-example-icon img {
+  display: inline-block;
+  height: 8em;
+  vertical-align: middle;
+}
+
+.inline-example-icon span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.5em;
+  line-height: 1em;
+  width: 700px;
+  text-align: left;
+}
+
 .border-box, .border-box * {
   box-sizing: border-box;
 }
