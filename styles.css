@@ -4,6 +4,14 @@
   margin-top: -1em;
 }
 
+.horizontal-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: rgba(255,255,255,0.8) url(resources/ruler-background.png) repeat-x top left;
+}
+
 .specificity {
   margin: 5rem auto;
 }
