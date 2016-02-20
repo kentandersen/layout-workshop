@@ -132,9 +132,13 @@ ul#summer-drinks li {
   margin-bottom: 10px;
 }
 
-.floating-example article,
-.floating-example aside {
+.floating-example article {
   background: #FD5158;
+
+}
+.floating-example aside {
+  background-color: #FFF9AE;
+  color: #1A1A1A;
 }
 
 .floating-example footer {
@@ -149,8 +153,6 @@ ul#summer-drinks li {
 .position-example .box-a,
 .position-example .box-b,
 .position-example .box-c {
-  width: 100px;
-  height: 100px;
   line-height: 100px;
   text-align: center;
   font-size: 3em;

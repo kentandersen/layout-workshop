@@ -1569,6 +1569,12 @@ class: split
 
 * Implementer designet _kun_ med inline-elementer
 
+---
+
+class: center middle
+#Floating
+
+---
 class: cols two
 
 #Floating
@@ -1824,8 +1830,6 @@ class: cols two
 ```css
   .box-a, .box-b, .box-c  {
     position: static; /* Default */
-    width: 100px;
-    height: 100px;
    }
 ```
 ]
@@ -1846,13 +1850,9 @@ class: cols two
 ```css
   .box-a, .box-b, .box-c  {
     position: static; /* Default */
-    width: 100px;
-    height: 100px;
-   }
+  }
   .box-b {
     position: relative;
-    left: 80px;
-    top: 20px;
   }
 ```
 ]
@@ -1873,9 +1873,7 @@ class: cols two
 ```css
   .box-a, .box-b, .box-c  {
     position: static; /* Default */
-    width: 100px;
-    height: 100px;
-   }
+  }
   .box-b {
     position: absolute;
   }
@@ -1898,11 +1896,34 @@ class: cols two
 ```css
   .box-a, .box-b, .box-c  {
     position: static; /* Default */
-    width: 100px;
-    height: 100px;
-   }
+  }
   .box-b {
     position: absolute;
+    width: 100px;
+  }
+```
+]
+<div class="col">
+  <div class="position-example">
+      <div class="box-a">A</div>
+      <div class="box-b" style="position:absolute;width:100px;">B</div>
+      <div class="box-c">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+
+#Absolute
+
+.col[
+```css
+  .box-a, .box-b, .box-c  {
+    position: static; /* Default */
+  }
+  .box-b {
+    position: absolute;
+    width: 100px;
     right: 0;
     top: 0;
   }
@@ -1911,7 +1932,7 @@ class: cols two
 <div class="col">
   <div class="position-example">
       <div class="box-a">A</div>
-      <div class="box-b" style="position:absolute;right: 0;top: 0;">B</div>
+      <div class="box-b" style="position:absolute;width:100px;right: 0;top: 0;">B</div>
       <div class="box-c">C</div>
   </div>
 </div>
@@ -1928,11 +1949,10 @@ class: cols two
   }
   .box-a, .box-b, .box-c  {
     position: static; /* Default */
-    width: 100px;
-    height: 100px;
-   }
+  }
   .box-b {
     position: absolute;
+    width: 100px;
     right: 0;
     top: 0;
   }
@@ -1941,7 +1961,7 @@ class: cols two
 <div class="col">
   <div class="position-example" style="position: relative;">
       <div class="box-a">A</div>
-      <div class="box-b" style="position:absolute;right: 0;top: 0;">B</div>
+      <div class="box-b" style="position:absolute;width:100px;right: 0;top: 0;">B</div>
       <div class="box-c">C</div>
   </div>
 </div>
