@@ -180,3 +180,30 @@ ul#summer-drinks li {
   background:#36BDB2;
 }
 
+.flexbox-example {
+  display: flex;
+  padding: 10px;
+  border: 1px solid #515151;
+}
+
+.flexbox-example .box-a,
+.flexbox-example .box-b,
+.flexbox-example .box-c {
+  line-height: 100px;
+  text-align: center;
+  font-size: 3em;
+  color: #fff;
+}
+
+.flexbox-example .box-a {
+  background:#FD5158;
+}
+
+.flexbox-example .box-b {
+  background:#FFF9AE;
+  color: #1A1A1A;
+}
+
+.flexbox-example .box-c {
+  background:#36BDB2;
+}

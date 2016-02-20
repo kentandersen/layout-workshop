@@ -2050,15 +2050,524 @@ class: split
 
 * Implementer designet _kun_ med positon
 
+---
+class: middle center
+#Flexbox
+
+---
+class: cols two
+#Flexbox
+
+.col[
+```css
+  .container {
+  }
+```
+]
+
+<div class="col">
+  <div class="flexbox-example" style="display: block;">
+    <div class="box-a">A</div>
+    <div class="box-b">B</div>
+    <div class="box-c">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+#Flexbox
+
+.col[
+```css
+  .container {
+    display: flex;
+  }
+```
+]
+
+<div class="col">
+  <div class="flexbox-example">
+    <div class="box-a">A</div>
+    <div class="box-b">B</div>
+    <div class="box-c">C</div>
+  </div>
+</div>
+---
+class: cols two
+#Flexbox - Justify-content
+
+.col[
+```css
+  .container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .box-a, .box-b, .box-c {
+    flex-grow: 1;
+  }
+```
+]
+
+<div class="col">
+  <div class="flexbox-example" style="justify-content: flex-start">
+    <div class="box-a" style="flex-grow: 1;">A</div>
+    <div class="box-b" style="flex-grow: 1;">B</div>
+    <div class="box-c" style="flex-grow: 1;">C</div>
+  </div>
+</div>
+---
+class: cols two
+#Flexbox - Justify-content
+
+.col[
+```css
+  .container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .box-a {
+    flex-grow: 0;
+  }
+  .box-b, .box-c {
+    flex-grow: 1;
+  }
+```
+]
+
+<div class="col">
+  <div class="flexbox-example" style="justify-content: flex-start;">
+    <div class="box-a" style="flex-grow: 0;">A</div>
+    <div class="box-b" style="flex-grow: 1;">B</div>
+    <div class="box-c" style="flex-grow: 1;">C</div>
+  </div>
+</div>
+---
+class: cols two
+#Flexbox - Justify-content
+
+.col[
+```css
+  .container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .box-a {
+    width: 250px;
+  }
+
+  .box-b, .box-c {
+    flex-grow: 1;
+  }
+```
+]
+
+<div class="col">
+  <div class="flexbox-example" style="justify-content: flex-start;">
+    <div class="box-a" style="width:250px;">A</div>
+    <div class="box-b" style="flex-grow: 1;">B</div>
+    <div class="box-c" style="flex-grow: 1;">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+#Flexbox - Justify-content
+
+.col[
+```css
+  .container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .box-a {
+    width: 250px;
+  }
+
+  .box-b {
+    flex-grow: 1;
+  }
+
+  .box-c {
+    flex-grow: 10;
+  }
+```
+]
+
+<div class="col">
+  <div class="flexbox-example" style="justify-content: flex-start;">
+    <div class="box-a" style="width:250px;">A</div>
+    <div class="box-b" style="flex-grow: 1;">B</div>
+    <div class="box-c" style="flex-grow: 4;">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+#Flexbox - flex-direction
+
+.col[
+```css
+  .container {
+    display: flex;
+  }
+
+  .box-a, .box-b, .box-c {
+    width: 100px;
+  }
+
+```
+]
+
+<div class="col">
+  <div class="flexbox-example">
+    <div class="box-a" style="width: 100px;">A</div>
+    <div class="box-b" style="width: 100px;">B</div>
+    <div class="box-c" style="width: 100px;">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+#Flexbox - flex-direction
+
+.col[
+```css
+  .container {
+    display: flex;
+    flex-direction: row; /* default */
+  }
+
+  .box-a, .box-b, .box-c {
+    width: 100px;
+  }
+
+```
+]
+
+<div class="col">
+  <div class="flexbox-example" style="flex-direction: row;">
+    <div class="box-a" style="width: 100px;">A</div>
+    <div class="box-b" style="width: 100px;">B</div>
+    <div class="box-c" style="width: 100px;">C</div>
+  </div>
+</div>
+---
+class: cols two
+#Flexbox - flex-direction
+
+.col[
+```css
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .box-a, .box-b, .box-c {
+    width: 100px;
+  }
+
+```
+]
+
+<div class="col">
+  <div class="flexbox-example" style="flex-direction: row-reverse;">
+    <div class="box-a" style="width: 100px;">A</div>
+    <div class="box-b" style="width: 100px;">B</div>
+    <div class="box-c" style="width: 100px;">C</div>
+  </div>
+</div>
+
+???
+fordi jeg har en fast bredde vil elementene legge seg mot høyre
+
+---
+class: cols two
+#Flexbox - flex-direction
+
+.col[
+```css
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box-a, .box-b, .box-c {
+    width: 100px;
+  }
+```
+]
+
+<div class="col">
+  <div class="flexbox-example" style="flex-direction: column;">
+    <div class="box-a" style="width: 100px;">A</div>
+    <div class="box-b" style="width: 100px;">B</div>
+    <div class="box-c" style="width: 100px;">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+#Flexbox - flex-direction
+
+.col[
+```css
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .box-a, .box-b, .box-c {
+    width: 100px;
+  }
+
+```
+]
+
+<div class="col">
+  <div class="flexbox-example" style="flex-direction: column-reverse;">
+    <div class="box-a" style="width: 100px;">A</div>
+    <div class="box-b" style="width: 100px;">B</div>
+    <div class="box-c" style="width: 100px;">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+#Flexbox - flex-wrap
+
+.col[
+```css
+  .container {
+    display: flex;
+  }
+
+```
+]
+
+<div class="col">
+  <div class="flexbox-example">
+    <div class="box-a">A</div>
+    <div class="box-b">B</div>
+    <div class="box-c">C</div>
+    <div class="box-a">D</div>
+    <div class="box-b">E</div>
+    <div class="box-c">F</div>
+    <div class="box-a">G</div>
+    <div class="box-b">H</div>
+    <div class="box-c">I</div>
+    <div class="box-a">J</div>
+    <div class="box-b">K</div>
+    <div class="box-c">L</div>
+    <div class="box-a">M</div>
+    <div class="box-b">N</div>
+    <div class="box-c">O</div>
+  </div>
+</div>
+
+---
+class: cols two
+#Flexbox - flex-wrap
+
+.col[
+```css
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+```
+]
+
+<div class="col">
+  <div class="flexbox-example" style="flex-wrap: wrap;">
+    <div class="box-a">A</div>
+    <div class="box-b">B</div>
+    <div class="box-c">C</div>
+    <div class="box-a">D</div>
+    <div class="box-b">E</div>
+    <div class="box-c">F</div>
+    <div class="box-a">G</div>
+    <div class="box-b">H</div>
+    <div class="box-c">I</div>
+    <div class="box-a">J</div>
+    <div class="box-b">K</div>
+    <div class="box-c">L</div>
+    <div class="box-a">M</div>
+    <div class="box-b">N</div>
+    <div class="box-c">O</div>
+  </div>
+</div>
+
+---
+class: cols two
+#Flexbox - flex-wrap
+
+.col[
+```css
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container .box {
+    width: 25%;
+  }
+
+```
+]
+
+<div class="col">
+  <div class="flexbox-example" style="flex-wrap: wrap;">
+    <div class="box-a" style="width: 25%">A</div>
+    <div class="box-b" style="width: 25%">B</div>
+    <div class="box-c" style="width: 25%">C</div>
+    <div class="box-a" style="width: 25%">D</div>
+    <div class="box-b" style="width: 25%">E</div>
+    <div class="box-c" style="width: 25%">F</div>
+    <div class="box-a" style="width: 25%">G</div>
+    <div class="box-b" style="width: 25%">H</div>
+    <div class="box-c" style="width: 25%">I</div>
+    <div class="box-a" style="width: 25%">J</div>
+    <div class="box-b" style="width: 25%">K</div>
+    <div class="box-c" style="width: 25%">L</div>
+    <div class="box-a" style="width: 25%">M</div>
+    <div class="box-b" style="width: 25%">N</div>
+    <div class="box-c" style="width: 25%">O</div>
+  </div>
+</div>
+
+---
+class: cols two
+#Flexbox - align-items
+
+.col[
+```css
+  .container {
+    display: flex;
+  }
+```
+]
+
+<div class="col">
+  <div class="flexbox-example">
+    <div class="box-a" style="width: 100px">A<br>A<br>A<br>A<br>A</div>
+    <div class="box-b" style="width: 100px">B<br>B<br>B<br>B</div>
+    <div class="box-c" style="width: 100px">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+#Flexbox - align-items
+
+.col[
+```css
+  .container {
+    display: flex;
+    align-items: flex-start;
+  }
+
+```
+]
+
+<div class="col">
+  <div class="flexbox-example" style="align-items: flex-start;">
+    <div class="box-a" style="width: 100px">A<br>A<br>A<br>A<br>A</div>
+    <div class="box-b" style="width: 100px">B<br>B<br>B<br>B</div>
+    <div class="box-c" style="width: 100px">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+#Flexbox - align-items
+
+.col[
+```css
+  .container {
+    display: flex;
+    align-items: flex-end;
+  }
+
+```
+]
+
+<div class="col">
+  <div class="flexbox-example" style="align-items: flex-end;">
+    <div class="box-a" style="width: 100px">A<br>A<br>A<br>A<br>A</div>
+    <div class="box-b" style="width: 100px">B<br>B<br>B<br>B</div>
+    <div class="box-c" style="width: 100px">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+#Flexbox - align-items
+
+.col[
+```css
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+```
+]
+
+<div class="col">
+  <div class="flexbox-example" style="align-items: center;">
+    <div class="box-a" style="width: 100px">A<br>A<br>A<br>A<br>A</div>
+    <div class="box-b" style="width: 100px">B<br>B<br>B<br>B</div>
+    <div class="box-c" style="width: 100px">C</div>
+  </div>
+</div>
+
+---
+class: cols two
+#Flexbox - align-items
+
+.col[
+```css
+  .container {
+    display: flex;
+    align-items: baseline;
+  }
+
+```
+]
+
+<div class="col">
+  <div class="flexbox-example" style="align-items: baseline;">
+    <div class="box-a" style="width: 100px">A<br>A<br>A<br>A<br>A</div>
+    <div class="box-b" style="width: 100px; font-size: 0.8em;">B<br>B<br>B<br>B</div>
+    <div class="box-c" style="width: 100px; font-size: 6em;">C</div>
+  </div>
+</div>
+
+--
+<div class="horizontal-line" style="top: 189px;">
+
+---
+class: split
+#Oppgave
+
+Implementer designet _kun_ med flexbox
+
+##Nyttige ressurser
+* [CSS-triks, A guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox)
+* [Learn CSS Layout, flexbox](http://learnlayout.com/flexbox.html)
+
+---
 #Videre studier
 <div style="text-align: center;">
   <img src="resources/learnlayout.png" style="width: 72%"/>
 </div>
 
 .source[http://learnlayout.com]
-
----
-
 
 ---
 #Videre studier
