@@ -1,3 +1,11 @@
+.remark-slide-number {
+  display: none;
+}
+
+.remark-slide .remark-slide-content.cols.three .col-span-two {
+  width: 66%;
+}
+
 .cols h1 + .col,
 .cols h1 + .col + .col,
 .cols h1 + .col + .col + .col {
