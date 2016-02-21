@@ -1063,7 +1063,209 @@ Her ser vi de to ved siden av hverandre
 ```
 
 ---
+class: center middle
+#Responsive design
 
+---
+class: fullscreen
+![](resources/this-is-the-web.png)
+
+.source[http://bradfrost.com]
+
+---
+class: fullscreen
+![](resources/this-will-be-the-web.png)
+
+.source[http://bradfrost.com]
+
+---
+class: center middle
+![](resources/finn-statistikk.png)
+
+.source[http://hjemmehos.finn.no/no/webfolk_+_entusiaster]
+
+---
+#Adaptive layout
+<img src="resources/adaptive-example1.png" style="width: 100%;" />
+.source[https://www.gjensidige.no]
+
+???
+Har alle sett Gjensidige.no?
+---
+#Adaptive layout
+<img src="resources/adaptive-example2.png" style="width: 100%;" />
+.source[https://www.gjensidige.no]
+
+---
+#Adaptive layout
+<img src="resources/adaptive-example3.png" style="width: 100%;" />
+.source[https://www.gjensidige.no]
+
+---
+class: cols three
+
+#Adaptive layout
+
+.col.col-span-two[
+```html
+  <div class="module">
+    <h2>Sjekk pris på forsikringene våre</h2>
+    <p>
+      På kun et par minutter får du et uforpliktende tilbud,
+      som inkluderer både nettrabatt og alle
+      organisasjonsrabattene.
+    </p>
+    <form action="GET">
+      <label>Velg forsikring</label>
+      <select class="form-control">
+        <option value="bil">Bilforsikring</option>
+        <option value="hus">Husforsikring</option>
+        <option value="innbo">Innboforsikring</option>
+        <option value="reise">Reiseforsikring</option>
+        <option value="mc">MC-forsikring</option>
+      </select>
+      <button type="submit">Sjekk pris og kjøp</button>
+    </form>
+  </div>
+```
+]
+.col[
+```css
+  .module {
+    padding: 10%;
+  }
+  .module p {
+    max-width: 400px;
+  }
+
+  .module form {
+    width: 50%;
+    max-width: 250px;
+  }
+```
+]
+
+---
+#Media Queries
+<iframe src="http://mediaqueri.es/popular/" style="width:100%;height:500px;border:0;background:#fff;"></iframe>
+
+.source[http://mediaqueri.es/]
+
+???
+blir også omtalt som breakpoints
+---
+
+#Media Queries
+```css
+  @media statement { ... }
+```
+--
+##AND operator
+```css
+  @media tv and (min-width: 700px) and (orientation: landscape) { ...  }
+```
+--
+##OR (,) operator
+```css
+  @media (min-width: 700px), handheld and (orientation: landscape) { ... }
+```
+--
+##NOT operator
+```css
+  @media not all and (monochrome) { ... }
+```
+
+.source[https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries]
+
+---
+#Media Queries
+
+```css
+  .long-list-with-things {
+    padding: 10%;
+  }
+
+  @media (max-width: 480px) {
+    .long-list-with-things {
+      padding: 2%;
+    }
+  }
+```
+
+---
+class: cols three
+#Desktop first
+
+
+.col[
+```css
+  ul li {
+    float: left;
+    width: 33.33%;
+  }
+
+  /* tablet */
+  @media (max-width:800px) {
+    ul li {
+      width: 50%;
+    }
+  }
+
+  /* mobile */
+  @media (max-width:480px) {
+    ul li {
+      float: none;
+      width: 100%;
+    }
+  }
+```
+]
+<div class="col col-span-two">
+  <img src="resources/responsive-example.png" style="width:100%">
+</div>
+
+.source[http://colly.com/]
+
+---
+class: cols three
+#Mobile first
+
+.col[
+```css
+  /* tablet */
+  @media (min-width:480px) {
+    ul li {
+      float: left;
+      width: 50%;
+    }
+  }
+
+  /* mobile */
+  @media (min-width:1024px) {
+    ul li {
+      width: 33.33%;
+    }
+  }
+```
+]
+<div class="col col-span-two">
+  <img src="resources/responsive-example.png" style="width:100%">
+</div>
+
+.source[http://colly.com/]
+
+---
+class: center middle
+
+#Devtools
+
+## ⌘ + ⌥ + i &nbsp;/&nbsp; ctrl + ⇧ + i
+
+---
+class: center middle
+#Spørsmål?
+
+---
 class: center middle bekk-top
 
 # Lunch time!
