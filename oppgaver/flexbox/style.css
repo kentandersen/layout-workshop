@@ -1,0 +1,22 @@
+@media (max-width: 379px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  #logo .type-of-company {
+    display: none;
+  }
+
+  figure.feature figcaption {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 380px) {
+
+}
+
+@media (min-width: 800px) {
+
+}
+
