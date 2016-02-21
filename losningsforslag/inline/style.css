@@ -1,0 +1,92 @@
+.container {
+  margin: 0 auto;
+}
+
+header > .container {
+}
+
+header #logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header form {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 8.2rem);
+  text-align: right;
+}
+
+header input[type="search"] {
+  margin-bottom: 0.8rem;
+}
+
+figure.feature {
+  margin-bottom: 2rem;
+}
+
+main > section figure {
+  margin-bottom: 1rem;
+}
+
+footer .address {
+  display: inline-block;
+  width: 50%
+}
+
+footer .map {
+  display: inline-block;
+  width: calc(50% - 1rem);
+  text-align: right;
+}
+
+footer .map img {
+  display: inline-block;
+  width: 100%;
+  max-width: 250px;
+}
+
+@media (max-width: 379px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  #logo .type-of-company {
+    display: none;
+  }
+
+  figure.feature figcaption {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 380px) {
+
+  main > section .other-stuff {
+    margin: 0 -0.5rem;
+  }
+
+  main > section figure {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0.5rem;
+    width: calc(50% - 1.2rem);
+  }
+
+}
+
+@media (min-width: 800px) {
+  main > section {
+    width: 66.66%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  main > aside {
+    width: 31.333%;
+    margin-left: 1%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
