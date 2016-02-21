@@ -18,10 +18,6 @@ header input[type="search"] {
   margin-bottom: 0.8rem;
 }
 
-figure {
-  position: relative;
-}
-
 figure.feature {
   margin-bottom: 2rem;
 }
@@ -60,7 +56,7 @@ footer .map {
 
 @media (min-width: 380px) {
   main > section .other-stuff {
-    margin: -0.5rem;
+    margin: 0 -0.5rem;
     overflow: hidden;
   }
 
