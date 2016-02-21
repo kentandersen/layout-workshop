@@ -1796,6 +1796,13 @@ Implementer designet _kun_ med inline-elementer
 * [CSS-triks, Display - inline](https://css-tricks.com/almanac/properties/d/display/#inline)
 * [CSS-triks, Fighting the Space Between Inline Block Elements](https://css-tricks.com/fighting-the-space-between-inline-block-elements/)
 * [Learn CSS Layout, inline-block](http://learnlayout.com/inline-block.html)
+
+<div class="countdown">
+  <button class="btn loud">Start</button>
+  <time datetime="13:25"></time>
+</div>
+
+<iframe src="losningsforslag/inline/index.html" style="width: 50%"></iframe>
 ---
 
 class: center middle
@@ -2046,6 +2053,14 @@ class: split
 ##Nyttige ressurser
 * [CSS-triks, All About Floats](https://css-tricks.com/all-about-floats/)
 * [Learn CSS Layout, float](http://learnlayout.com/float.html)
+
+<div class="countdown">
+  <button class="btn loud">Start</button>
+  <time datetime="14:25"></time>
+</div>
+
+
+<iframe src="losningsforslag/float/index.html" style="width: 50%"></iframe>
 
 ---
 class: center middle
@@ -2337,6 +2352,12 @@ Implementer designet _kun_ med positon
 * [CSS-triks, Absolute Positioning Inside Relative Positioning](https://css-tricks.com/absolute-positioning-inside-relative-positioning/)
 * [Learn CSS Layout, position](http://learnlayout.com/position.html)
 
+<div class="countdown">
+  <button class="btn loud">Start</button>
+  <time datetime="15:25"></time>
+</div>
+
+<iframe src="losningsforslag/position/index.html" style="width: 50%"></iframe>
 
 ---
 class: middle center
@@ -2849,6 +2870,13 @@ Implementer designet _kun_ med flexbox
 * [CSS-triks, A guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox)
 * [Learn CSS Layout, flexbox](http://learnlayout.com/flexbox.html)
 
+<div class="countdown">
+  <button class="btn loud">Start</button>
+  <time datetime="16:25"></time>
+</div>
+
+<iframe src="losningsforslag/flexbox/index.html" style="width: 50%"></iframe>
+
 ---
 #Videre studier
 <div style="text-align: center;">
@@ -2873,6 +2901,7 @@ class: center middle
 
     </textarea>
     <script src="node_modules/remark-bekk/vendor/remark.min.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
     <script type="text/javascript">
       var slideshow = remark.create({
         ratio: '16:9',
@@ -2886,6 +2915,27 @@ class: center middle
       var dateStr = new Date().toLocaleString('nb-NO', { year: 'numeric', month: 'long', day: 'numeric' });
 
       document.querySelector('.today-date').textContent = dateStr;
+
+      document.addEventListener('click', function(event) {
+        var el = event.target;
+        var time = el.nextElementSibling
+
+        if(el.matches('.countdown button') && time.tagName === "TIME") {
+          el.remove();
+          var parsedTime = time.getAttribute('datetime').split(':');
+          var completionDate = new Date();
+          completionDate.setHours(Number(parsedTime[0]));
+          completionDate.setMinutes(Number(parsedTime[1]))
+          completionDate.setSeconds(0);
+          completionDate.setMilliseconds(0);
+
+
+          time.style.display = 'inline-block';
+          countdown(time, completionDate)
+        }
+      })
+
+
     </script>
 
   </body>

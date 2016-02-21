@@ -12,6 +12,15 @@
   margin-top: -1em;
 }
 
+.countdown {
+  position: absolute;
+  bottom: 180px;
+}
+.countdown time {
+  display: none;
+  font-size: 2em;
+}
+
 .horizontal-line {
   position: absolute;
   left: 0;
