@@ -58,10 +58,34 @@ ul#summer-drinks li {
   font-weight: bold;
 }
 
+.display-example > * {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.display-example address,
+.display-example h2 {
+    background: #FD5158;
+    color: #fff;
+  }
+
+.display-example blockquote,
+.display-example main {
+    background: #FFF9AE;
+    color: #1A1A1A;
+  }
+
+.display-example figure,
+.display-example nav {
+    background: #36BDB2;
+    color: #fff;
+  }
+}
+
 .inline-example {
   margin-top: 50px;
 }
-
 
 .inline-example div {
   display: inline-block;
