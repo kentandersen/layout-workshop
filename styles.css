@@ -12,13 +12,59 @@
   margin-top: -1em;
 }
 
-.countdown {
-  position: absolute;
-  bottom: 180px;
+.browser {
+  position: relative;
+  box-sizing: border-box;
+  height: 550px;
+  width: 900px;
+  background-image: url('resources/browser-frame-left.png'), url('resources/browser-frame-right.png');
+  background-position: top left, top right;
+  background-repeat: no-repeat;
+  background-size: auto 50px;
+  margin: 20px auto;
+  border-radius: 5px;
+  padding-top: 50px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 1);
 }
-.countdown time {
-  display: none;
-  font-size: 2em;
+
+.browser iframe,
+.browser .content {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.browser .content {
+  overflow: auto;
+}
+
+.browser .title {
+  position: absolute;
+  left: 61px;
+  top: 11px;
+  width: 110px;
+  font-family: "HelveticaNeue-Light";
+  font-weight: 300;
+  color: #000;
+  font-size: 9px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.browser .title .favicon {
+  height: 12px;
+  vertical-align: middle;
+}
+
+.browser .url {
+  position: absolute;
+  font-family: "HelveticaNeue-Light";
+  font-weight: 300;
+  left: 70px;
+  top: 30px;
+  color: #000;
+  font-size: 10px;
 }
 
 .horizontal-line {
@@ -27,35 +73,6 @@
   right: 0;
   height: 40px;
   background: rgba(255,255,255,0.8) url(resources/ruler-background.png) repeat-x top left;
-}
-
-.specificity {
-  margin: 5rem auto;
-}
-
-.specificity tbody {
-  background: #fff;
-  color: #000;
-}
-
-.specificity td {
-  height: 120px;
-  width: 60px;
-  padding: 20px;
-  border: 4px solid #ccc;
-  color: 000;
-  font-size: 2em;
-  text-align: center;
-  background:  linear-gradient(to bottom, rgba(0,0,0,0.16) 0%,#FDF6E3 49%,rgba(0,0,0,0.12) 100%);
-}
-
-ul#summer-drinks li {
-  color: #c6c8ca;
-}
-
-.favorite {
-  color: red;
-  font-weight: bold;
 }
 
 .display-example > * {
@@ -119,7 +136,6 @@ ul#summer-drinks li {
 }
 
 .inline-example-icon {
-
   font-size: 2em;
 }
 
@@ -161,39 +177,23 @@ ul#summer-drinks li {
   border:1px solid;
 }
 
-.floating-example {
-  margin-top: 1em;
+.center-example {
+  padding: 10px;
+  border: 1px solid #515151;
 }
 
-.floating-example {
+.center-example + .center-example {
+  margin-top: 1rem;
+}
+
+.center-example span,
+.center-example div {
+  padding: 0.2em;
+  background:#FD5158;
+  line-height: 1.2em;
+  font-size: 2em;
   color: #fff;
 }
-.floating-example.clearfix:after {
-  content: "";
-  visibility: hidden;
-  display: block;
-  height: 0;
-  clear: both;
-}
-
-.floating-example > * {
-  padding: 20px;
-  margin-bottom: 10px;
-}
-
-.floating-example article {
-  background: #FD5158;
-
-}
-.floating-example aside {
-  background-color: #FFF9AE;
-  color: #1A1A1A;
-}
-
-.floating-example footer {
-  background: #36BDB2;
-}
-
 
 .position-example {
   padding: 10px;
@@ -246,5 +246,33 @@ ul#summer-drinks li {
 }
 
 .flexbox-example .box-c {
+  background:#36BDB2;
+}
+
+.calc-example {
+  display: flex;
+  padding: 10px;
+  border: 1px solid #515151;
+}
+
+.calc-example .box-a,
+.calc-example .box-b,
+.calc-example .box-c {
+  line-height: 100px;
+  text-align: center;
+  font-size: 3em;
+  color: #fff;
+}
+
+.calc-example .box-a {
+  background:#FD5158;
+}
+
+.calc-example .box-b {
+  background:#FFF9AE;
+  color: #1A1A1A;
+}
+
+.calc-example .box-c {
   background:#36BDB2;
 }
