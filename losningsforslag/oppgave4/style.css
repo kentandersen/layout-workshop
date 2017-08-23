@@ -1,0 +1,58 @@
+.container {
+  margin: 0 auto;
+}
+
+#logo {
+  display: inline-block;
+}
+
+figure {
+  position: relative;
+}
+
+figure figcaption {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+}
+
+figure.feature {
+  margin-bottom: 2rem;
+}
+
+main.container {
+  margin-bottom: 2rem;
+}
+
+main > section figure {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 380px) {
+  main > section .other-stuff {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  main > section figure {
+    width: calc(50% - 0.5rem);
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 800px) {
+  main.container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  main > section {
+    width: calc(66.666% - 0.5rem);
+  }
+
+  main > aside {
+    width: calc(33.333% - 0.5rem);
+  }
+}

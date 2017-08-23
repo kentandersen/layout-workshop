@@ -1,0 +1,47 @@
+.container {
+  margin: 0 auto;
+}
+
+#logo {
+  display: inline-block;
+}
+
+figure.feature {
+  margin-bottom: 2rem;
+}
+
+main.container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+main > section {
+  width: calc(66.666% - 0.5rem);
+}
+
+main > aside {
+  width: calc(33.333% - 0.5rem);
+}
+
+main > section .other-stuff {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+main > section figure {
+  width: calc(50% - 0.5rem);
+  margin-bottom: 1rem;
+}
+
+figure {
+  position: relative;
+}
+
+figure figcaption {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+}
