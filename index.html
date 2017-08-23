@@ -2248,8 +2248,6 @@ class: split
 
     </textarea>
     <script src="https://cdn.rawgit.com/bekk/remark/master/vendor/remark.min.js" type="text/javascript"></script>
-    <script src="script.js" type="text/javascript"></script>
-
     <script type="text/javascript">
       var slideshow = remark.create({
         ratio: '16:9',
@@ -2263,27 +2261,6 @@ class: split
       var dateStr = new Date().toLocaleString('nb-NO', { year: 'numeric', month: 'long', day: 'numeric' });
 
       document.querySelector('.today-date').textContent = dateStr;
-
-      document.addEventListener('click', function(event) {
-        var el = event.target;
-        var time = el.nextElementSibling
-
-        if(el.matches('.countdown button') && time.tagName === "TIME") {
-          el.remove();
-          var parsedTime = time.getAttribute('datetime').split(':');
-          var completionDate = new Date();
-          completionDate.setHours(Number(parsedTime[0]));
-          completionDate.setMinutes(Number(parsedTime[1]))
-          completionDate.setSeconds(0);
-          completionDate.setMilliseconds(0);
-
-
-          time.style.display = 'inline-block';
-          countdown(time, completionDate)
-        }
-      })
-
-
     </script>
 
   </body>
